@@ -5,6 +5,13 @@ pipeline {
     stages {
 
         stage('Checkout') {
+
+            stpes {
+                checkout scm
+               }
+              }
+
+        stage('Checkout') {
         
             steps {
                  git 'https://github.com/amit411/testing_pipeline.git'
