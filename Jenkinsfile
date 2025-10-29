@@ -3,11 +3,11 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-              git 'https://github.com/amit411/testing_pipeline.git'
-                  }
-                 }
+       # stage('Checkout') {
+        #    steps {
+         #     git 'https://github.com/amit411/testing_pipeline.git'
+          #        }
+           #      }
 
         stage('build and deploy') {
 
