@@ -12,8 +12,8 @@ pipeline {
         stage('build and deploy') {
 
             steps {
-                sh 'sudo docker build -t latest-image-cicd .'
-                sh 'sudo docker run -d -it -p 80:80 latest-image-cicd'
+                sh 'docker build -t latest-image-cicd .'
+                sh 'docker run -d -it -p 80:80 latest-image-cicd'
            }
           }
          }
